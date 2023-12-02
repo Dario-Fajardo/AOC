@@ -1,4 +1,4 @@
-# AOC
+# Advent of Code
 Puzzles de programación de Advent of Code
 
 * **Autor**: Darío Fajardo
