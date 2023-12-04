@@ -15,6 +15,7 @@
 // ...*......
 // ..35..633.
 // ......#...
+
 // 617*......
 // .....+.58.
 // ..592.....
@@ -29,6 +30,7 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <set>
 
 struct Number {
   int gear_id;
@@ -115,6 +117,15 @@ int main() {
     }
   }
   // Calcular sum
+  std::set<Gear> sum_gears;
+  for (Number& number : numbers) {
+    int gear_counter{0};
+    for (Number& number2 : numbers) {
+      if (number.gear_id == number2.gear_id) {
+        ++gear_counter;
+      }
+    }
+  }
   for (Gear& gear : gears) {
     std::cout << "Gear: " << gear.gear_id << " " << gear.coords.first << " " << gear.coords.second << std::endl;
     for (Number& number : numbers) {
