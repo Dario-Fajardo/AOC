@@ -103,7 +103,7 @@
 #include <algorithm>
 
 int main() {
-    std::ifstream file{"input/input.txt"};
+    std::ifstream file{"input/input_copy.txt"};
     std::string line;
     std::vector<long> seeds;
     getline(file, line);
