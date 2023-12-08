@@ -24,7 +24,6 @@ long StepsToZ(const std::string& instructions, const std::map<std::string, std::
       }
     }
   }
-  std::cout << "Steps to Z: " << steps << std::endl; 
   return steps;
 } 
 
@@ -48,8 +47,6 @@ int main() {
   }
   std::vector<long> steps;
   for (const auto& key : initial_keys) {
-    std::cout << "Checking key " << key << std::endl;
-    std::cout << "---------------------------------------" << std::endl;
     steps.emplace_back(StepsToZ(instructions, network, key));
   }
   long total = 1;
